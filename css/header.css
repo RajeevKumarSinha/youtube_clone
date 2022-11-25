@@ -197,9 +197,6 @@
     margin-bottom: 300px;
 }
 
-.mainSection {
-    
-}
 @media (max-width:869.95px) {
     .mainSection{
         display: grid;
