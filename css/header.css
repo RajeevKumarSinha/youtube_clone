@@ -1,0 +1,284 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.websiteContainer {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+
+}
+
+.header {
+    z-index: 2;
+    /* width: 100%; */
+    left: 0;
+    right: 0;
+    position: fixed;
+    display: flex;
+    height: 60px;
+    top: 0;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+/* logo and collapsible nav icon  */
+.logoSection {
+    width: 190px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.hamMenu,
+.searchIcon,
+.voiceSearchIcon,
+.create,
+.ytAppsIcon,
+.notificationIcon {
+    width: 24px;
+}
+
+.logo {
+    width: 88px;
+}
+
+/* search box and voice search icon  */
+.searchSection {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 1;
+}
+
+.searchBox {
+    padding: 10px;
+    flex: 1;
+    font-size: 17px;
+    border: 1px solid rgb(206, 205, 205);
+    margin-left: 40px;
+    max-width: 400px;
+    width: 0;
+}
+
+.searchBtn {
+    padding: 8px 20px;
+    margin-left: -1px;
+    border: 1px solid rgb(206, 205, 205);
+}
+
+.searchContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.tooltip {
+    position: absolute;
+    color: white;
+    background-color: gray;
+    font-size: small;
+    padding: 10px;
+    bottom: -50px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.searchContainer:hover .tooltip,
+.voiceSearchBox:hover .tooltip,
+.createContainer:hover .tooltip,
+.ytAppsContainer:hover .tooltip,
+.notificationsContainer:hover .tooltip {
+    opacity: 1;
+}
+
+.voiceSearchBox {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    padding: 7.5px 8px;
+    border-radius: 50%;
+    background-color: #f8f6f6;
+}
+
+/* user account notification create and apps section  */
+.usrAccSection {
+    width: 260px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.createContainer,
+.ytAppsContainer,
+.notificationsContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.myChannelIcon {
+    width: 35px;
+}
+
+
+.cursorPointer {
+    cursor: pointer;
+}
+
+.notificationsContainer {
+    position: relative;
+}
+
+.noOfNotification {
+    position: absolute;
+    background-color: rgb(207, 3, 3);
+    color: white;
+    font-size: 11px;
+    border-radius: 50%;
+    padding: 1.5px 5px;
+    right: -4px;
+    top: -1px;
+}
+
+/* navigation styles  */
+
+.nav {
+    width: 75px;
+    left: 0;
+    top: 0px;
+    bottom: 0px;
+    background-color: white;
+    position: fixed;
+    z-index: 100;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.homeContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    height: 74px;
+    /* background-color: purple; */
+}
+
+.navIcon {
+    width: 24px;
+}
+
+.homeContainer:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.navName {
+    font-size: x-small;
+    margin-top: 5px;
+}
+
+/* main section style of the website  */
+
+
+.mainSectionConatiner {
+    margin-top: 60px;
+    margin-left: 75px;
+    background-color: rgb(249, 249, 249);
+    padding: 30px;
+    margin-bottom: 300px;
+}
+
+.mainSection {
+    
+}
+@media (max-width:869.95px) {
+    .mainSection{
+        display: grid;
+    column-gap: 16px;
+    row-gap: 40px;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width:870px) and (max-width:1125px) {
+    .mainSection{
+        display: grid;
+    column-gap: 16px;
+    row-gap: 40px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width:1125.02px) {
+    .mainSection{
+        display: grid;
+    column-gap: 16px;
+    row-gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.singleVideoContainer {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+}
+
+.thumbnail {
+    width: 100%;
+}
+
+.videoDescriptionContainer {
+    display: flex;
+    margin-top: 10px;
+}
+
+.proPicContainer {
+    width: 8%;
+}
+
+.proPic {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.videoInfoWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    flex: 1;
+}
+
+.videoTitle {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.channelName,
+.viewsAndTime {
+    font-size: small;
+    color: rgb(103, 102, 102);
+    line-height: 19px;
+}
+
+.thumbnailContainer{
+    position: relative;
+}
+.timeStamp{
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+    color: white;
+    background-color: black;
+    font-size: smaller;
+    padding: 4px 3px;
+    border-radius: 2px;
+}
